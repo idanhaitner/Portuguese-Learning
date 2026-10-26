@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Bricolage Grotesque",sans-serif;background:#fff;color:#101828}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 40px;border-bottom:2px solid #1F4FA8}
+.brand{font-size:24px;font-weight:800;color:#1F4FA8}
+nav{display:flex;gap:6px}
+nav a{padding:9px 16px;border-radius:8px;font-size:14px;color:#101828;text-decoration:none}
+nav a.on{background:#1F4FA8;color:#fff}
+.wrap{display:grid;grid-template-columns:420px 1fr;gap:32px;padding:32px 40px}
+h1{font-size:64px;line-height:.95;font-weight:800;letter-spacing:-.03em;color:#1F4FA8}
+p{font-size:15px;color:#475467;margin:14px 0 24px}
+.cta{display:inline-block;background:#E3A21A;color:#101828;font-weight:700;padding:16px 26px;border-radius:10px}
+.stat{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat div{border:2px solid #1F4FA8;border-radius:12px;padding:14px}
+.stat b{font-size:40px;color:#1F4FA8;display:block}
+.stat span{font-size:12px;color:#475467}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.t{aspect-ratio:1;position:relative;background:#fff;border:1px solid #d6dff2;display:flex;align-items:flex-end;padding:10px;font-size:13px;font-weight:700;overflow:hidden}
+.t::before{content:"";position:absolute;inset:0;background:
+radial-gradient(circle at 0 0,#1F4FA8 0 34%,transparent 35%),
+radial-gradient(circle at 100% 100%,#1F4FA8 0 34%,transparent 35%);}
+.t.b::before{background:linear-gradient(45deg,#1F4FA8 50%,transparent 50%)}
+.t.c::before{background:linear-gradient(90deg,#E3A21A 0 50%,#1F4FA8 50%);clip-path:polygon(0 0,100% 0,0 100%)}
+.t.d::before{background:radial-gradient(circle,#1F4FA8 0 30%,transparent 31%)}
+.t.due{outline:3px solid #E3A21A;outline-offset:-3px;transform:rotate(-4deg)}
+.t span{position:relative;background:#fff;padding:3px 6px;border-radius:4px}
+</style></head><body>
+<header><div class="brand">Português</div>
+<nav><a class="on" href="#">Today</a><a href="#">Subjects</a><a href="#">Study</a><a href="#">Practice</a><a href="#">Verbs</a><a href="#">Progress</a></nav></header>
+<div class="wrap">
+<section>
+<h1>Boa tarde.<br>34 tiles<br>are turning.</h1>
+<p>Cards due today in Time, Food and Drink and the past tense. Each subject is a tile; due ones turn toward you.</p>
+<span class="cta">Start review →</span>
+<div class="stat"><div><b>312</b><span>words mastered of 822</span></div><div><b>46</b><span>subjects on the wall</span></div></div>
+</section>
+<section class="wall">
+<div class="t"><span>Greetings</span></div><div class="t b"><span>Family</span></div><div class="t c due"><span>Days</span></div><div class="t d"><span>Months</span></div><div class="t"><span>The body</span></div><div class="t b"><span>Clothes</span></div>
+<div class="t d"><span>Feelings</span></div><div class="t c"><span>Rooms</span></div><div class="t"><span>Meals</span></div><div class="t b due"><span>At the café</span></div><div class="t d"><span>Places</span></div><div class="t c"><span>Directions</span></div>
+<div class="t b"><span>Animals</span></div><div class="t"><span>Weather</span></div><div class="t d"><span>School</span></div><div class="t c"><span>Sports</span></div><div class="t b due"><span>Past simple</span></div><div class="t"><span>Colours</span></div>
+<div class="t c"><span>Adjectives</span></div><div class="t d"><span>Comparisons</span></div><div class="t b"><span>Para &amp; por</span></div><div class="t"><span>This &amp; that</span></div><div class="t c"><span>Foi, era</span></div><div class="t d"><span>Participle</span></div>
+</section>
+</div>
+</body></html>

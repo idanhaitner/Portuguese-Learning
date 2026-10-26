@@ -1,0 +1,42 @@
+{
+  "hook": {
+    "enabled": true,
+    "limits": {
+      "maxFindings": 5,
+      "maxChars": 8000
+    }
+  },
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "*",
+        "files": [
+          "src/index.css"
+        ],
+        "createdAt": "2026-10-26T19:16:17.793Z",
+        "reason": "Agent: a 12% overshoot as a stone settles into its socket is the pavement's literal motion; used only on stones, tokens and the combo chip"
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-26T19:17:04.931Z",
+        "reason": "Agent: decision-round sketch of the deliberately generic category standard; not shipped"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-26T19:17:04.949Z",
+        "reason": "Agent: decision-round sketch of an unchosen direction (radial gradients draw tile motifs); not shipped"
+      }
+    ]
+  }
+}

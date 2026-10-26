@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#888}iframe{border:0;display:block}</style></head><body><script type="module">
+const q = new URLSearchParams(location.search);
+const d = (await import('/src/data/learning-data.json')).default;
+const ids = [...d.vocabulary.map(v=>'vocab:'+v.id), ...d.phrases.map(p=>'phrase:'+p.id), ...d.verbs.map(v=>'verb:'+v.id)];
+const now = Date.now(), day = 86400000, cards = {};
+ids.forEach((id,i)=>{ const x = Math.abs(Math.sin(i*12.9898)*43758.5453 % 1);
+ if (i % 3 === 0 && x < 0.9) cards[id] = x<0.45?{ease:2.6,interval:30,repetitions:4,due:now+20*day,lapses:0}:x<0.65?{ease:2.5,interval:8,repetitions:2,due:now+5*day,lapses:0}:x<0.8?{ease:2.3,interval:1,repetitions:1,due:now+day,lapses:0}:{ease:2.3,interval:1,repetitions:1,due:now-day,lapses:0}; });
+const days=[]; for (let k=13;k>=0;k--){const dt=new Date(now-k*day);const key=`${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')}`; if(k%3!==1) days.push({date:key,reviews:10+((k*7)%25),correct:8});}
+localStorage.setItem("pt-study-progress-v1", JSON.stringify({cards,days,lastStudyDate:days.at(-1).date,streak:4,cardReviews:412,cardCorrect:350,quizReviews:120,quizCorrect:96,missedQuizIds:[],hardCardIds:ids.slice(0,5)}));
+localStorage.setItem("pt-study-settings-v1", JSON.stringify({theme:q.get('theme')||'light'}));
+const f = document.createElement('iframe'); f.width=q.get('w'); f.height=q.get('h'); f.src=q.get('page');
+document.body.append(f);
+if (q.get('flip')) { const t = setInterval(() => { const doc = f.contentDocument; if (doc?.querySelector('.flip-front')) { clearInterval(t); setTimeout(() => doc.body.dispatchEvent(new f.contentWindow.KeyboardEvent('keydown', { key: ' ', bubbles: true })), 600); } }, 200); }
+</script></body></html>
