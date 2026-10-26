@@ -209,7 +209,7 @@ export function FlashcardsPage() {
                 label={`Your pavement, with the ${results.length} stones from this round just laid`}
               />
             </div>
-            <p className="mt-2 text-[var(--t-xs)] text-[var(--on-basalt-muted)]">This round's stones, ringed in sun, set into your pavement.</p>
+            <p className="mt-2 text-[var(--t-xs)] text-[var(--on-basalt-muted)]">This round's stones are outlined in sun.</p>
             {missed.length ? (
               <>
                 <h3 className="mt-8 text-[var(--t-sm)] font-bold text-[var(--on-basalt)]">To look at again</h3>

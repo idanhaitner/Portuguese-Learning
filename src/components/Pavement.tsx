@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { ProgressState } from "../context/AppState";
 import type { StudyCard } from "../lib/content";
 import { masteryOf } from "../lib/srs";
@@ -99,16 +99,17 @@ export function Pavement({
       }
     }
     slots.sort((a, b) => a.key - b.key);
-    const waves = Math.max(2, Math.round(cols / 11));
+    // two to three broad swells across the band, like the promenade seen from above
+    const waves = Math.max(1, Math.min(3, Math.round(cols / 28)));
     const cells: Cell[] = ordered.map((item, index) => {
       const slot = slots[index];
       const u = slot.c / cols;
       const v = slot.r / rows;
-      const wave = v + 0.11 * Math.sin(u * Math.PI * 2 * waves);
+      const wave = v + 0.2 * Math.sin(u * Math.PI * 2 * waves + 0.6);
       return {
         x: offsetX + slot.c * pitch,
         y: offsetY + slot.r * pitch,
-        band: ((Math.floor(wave * 5) % 2) + 2) % 2,
+        band: ((Math.floor(wave * 4) % 2) + 2) % 2,
         card: item.card,
         state: item.state,
         delay: freshOrder ? (freshOrder.has(item.card.id) ? 500 + freshOrder.get(item.card.id)! * 90 : -1000) : (index / n) * 1300 + ((slot.r * 37) % 11) * 12,
@@ -118,9 +119,12 @@ export function Pavement({
     return { cells, pitch };
   }, [ordered, size, freshOrder]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const element = wrapRef.current;
     if (!element) return;
+    // measure once now so the first paint has a size; the observer keeps it current
+    const rect = element.getBoundingClientRect();
+    setSize({ w: Math.round(rect.width), h: Math.round(rect.height) });
     const observer = new ResizeObserver(([entry]) => setSize({ w: Math.round(entry.contentRect.width), h: Math.round(entry.contentRect.height) }));
     observer.observe(element);
     return () => observer.disconnect();
@@ -194,6 +198,13 @@ export function Pavement({
           ctx.fillStyle = COLORS.blackEdge;
           ctx.fillRect(x + radius * 0.5, y, Math.max(0, s - radius), Math.max(0.6, s * 0.08));
         }
+        // this round's stones keep a sun outline once they have set
+        if (cell.fresh && grow >= 1) {
+          ctx.strokeStyle = COLORS.due;
+          ctx.lineWidth = Math.max(1.5, pitch * 0.12);
+          roundRect(ctx, x - 1, y - 1, s + 2, s + 2, radius + 1);
+          ctx.stroke();
+        }
         if (cell.fresh && local > 0 && local < 1600) {
           const ring = Math.min(1, local / 1600);
           ctx.strokeStyle = `rgba(255, 197, 49, ${1 - ring})`;
@@ -216,7 +227,8 @@ export function Pavement({
       if (visible && !document.hidden && (settling || !reduce)) frame = requestAnimationFrame(draw);
     }
 
-    frame = requestAnimationFrame(draw);
+    // paint the first frame now, so the pavement never shows an empty field while waiting for a frame
+    draw(performance.now());
     const io = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
       if (visible) {

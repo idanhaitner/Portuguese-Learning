@@ -1,0 +1,849 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T19:36:01+00:00",
+  "title": "Design System: Português",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Limestone Ground",
+        "canonical": "#f3f3f0",
+        "oklch": "oklch(96.3% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ],
+        "dark": "#0d0d0c"
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised Limestone",
+        "canonical": "#e9e8e2",
+        "oklch": "oklch(93.0% 0.008 98.9)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#262521",
+          "#43423d",
+          "#62615c",
+          "#83827d",
+          "#a6a59f",
+          "#cac9c3",
+          "#f0efe9"
+        ],
+        "dark": "#181816"
+      },
+      "sunken": {
+        "role": "neutral",
+        "displayName": "Sunken Sand",
+        "canonical": "#dddcd4",
+        "oklch": "oklch(89.3% 0.011 100.8)",
+        "tonalRamp": [
+          "#0c0b06",
+          "#26251f",
+          "#43423c",
+          "#62615b",
+          "#84837b",
+          "#a6a59e",
+          "#cac9c2",
+          "#f0efe7"
+        ],
+        "dark": "#1f1f1c"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Joint Line",
+        "canonical": "#d3d2c9",
+        "oklch": "oklch(86.2% 0.012 101.5)",
+        "tonalRamp": [
+          "#0c0b06",
+          "#26251f",
+          "#43423b",
+          "#62625a",
+          "#84837a",
+          "#a6a59d",
+          "#cac9c1",
+          "#f0efe6"
+        ],
+        "dark": "#2c2c28"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Mortar Rule",
+        "canonical": "#dad9d1",
+        "oklch": "oklch(88.4% 0.011 100.8)",
+        "tonalRamp": [
+          "#0c0b06",
+          "#26251f",
+          "#43423c",
+          "#62615b",
+          "#84837b",
+          "#a6a59e",
+          "#cac9c2",
+          "#f0efe7"
+        ],
+        "dark": "#242421"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#121212",
+        "oklch": "oklch(18.2% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ],
+        "dark": "#f3f3f0"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "canonical": "#5d5d57",
+        "oklch": "oklch(47.6% 0.009 106.8)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#252520",
+          "#42423d",
+          "#62625c",
+          "#83837c",
+          "#a5a59f",
+          "#cacac3",
+          "#efefe8"
+        ],
+        "dark": "#a8a8a0"
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Faint",
+        "canonical": "#8a8a83",
+        "oklch": "oklch(63.1% 0.010 106.7)",
+        "tonalRamp": [
+          "#0c0b07",
+          "#252520",
+          "#42423c",
+          "#62625b",
+          "#83837c",
+          "#a5a69e",
+          "#cacac2",
+          "#efefe7"
+        ],
+        "dark": "#77776f"
+      },
+      "basalt": {
+        "role": "neutral",
+        "displayName": "Basalt",
+        "canonical": "#141413",
+        "oklch": "oklch(19.1% 0.002 106.6)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#a5a5a4",
+          "#c9c9c8",
+          "#eeeeed"
+        ],
+        "dark": "#050505"
+      },
+      "basalt-2": {
+        "role": "neutral",
+        "displayName": "Basalt Raised",
+        "canonical": "#22221f",
+        "oklch": "oklch(25.1% 0.006 106.8)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61615e",
+          "#82837f",
+          "#a5a5a1",
+          "#c9c9c5",
+          "#efefeb"
+        ],
+        "dark": "#161614"
+      },
+      "basalt-line": {
+        "role": "neutral",
+        "displayName": "Basalt Joint",
+        "canonical": "#33332f",
+        "oklch": "oklch(32.0% 0.007 106.8)",
+        "tonalRamp": [
+          "#0b0b08",
+          "#252521",
+          "#42423e",
+          "#61615d",
+          "#83837e",
+          "#a5a5a0",
+          "#c9c9c4",
+          "#efefea"
+        ],
+        "dark": "#2a2a26"
+      },
+      "limestone": {
+        "role": "neutral",
+        "displayName": "Limestone",
+        "canonical": "#f3f3f0",
+        "oklch": "oklch(96.3% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ]
+      },
+      "on-basalt": {
+        "role": "neutral",
+        "displayName": "On Basalt",
+        "canonical": "#f3f3f0",
+        "oklch": "oklch(96.3% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ]
+      },
+      "on-basalt-muted": {
+        "role": "neutral",
+        "displayName": "On Basalt Muted",
+        "canonical": "#a6a69e",
+        "oklch": "oklch(72.3% 0.011 106.7)",
+        "tonalRamp": [
+          "#0c0c06",
+          "#26251f",
+          "#42423c",
+          "#62625a",
+          "#83837b",
+          "#a6a69e",
+          "#cacac1",
+          "#efefe7"
+        ]
+      },
+      "sea": {
+        "role": "primary",
+        "displayName": "Copacabana Sea",
+        "canonical": "#087099",
+        "oklch": "oklch(51.3% 0.104 233.3)",
+        "tonalRamp": [
+          "#000d1a",
+          "#00293d",
+          "#084863",
+          "#13698f",
+          "#348cb7",
+          "#5bb0dc",
+          "#87d4fe",
+          "#ddf2fe"
+        ],
+        "dark": "#3fb3dd"
+      },
+      "sea-bright": {
+        "role": "primary",
+        "displayName": "Sea Bright",
+        "canonical": "#3fb3dd",
+        "oklch": "oklch(72.0% 0.118 226.4)",
+        "tonalRamp": [
+          "#000e17",
+          "#002a38",
+          "#03495f",
+          "#0a6b89",
+          "#1f8fb4",
+          "#40b4de",
+          "#7dd7fb",
+          "#daf3ff"
+        ]
+      },
+      "sun": {
+        "role": "secondary",
+        "displayName": "Ipanema Sun",
+        "canonical": "#ffc531",
+        "oklch": "oklch(85.3% 0.163 85.2)",
+        "tonalRamp": [
+          "#130900",
+          "#312200",
+          "#553e01",
+          "#7b5c06",
+          "#a27c1a",
+          "#cc9d25",
+          "#f9bf27",
+          "#feedc9"
+        ]
+      },
+      "sun-deep": {
+        "role": "secondary",
+        "displayName": "Deep Sun",
+        "canonical": "#e8a800",
+        "oklch": "oklch(77.2% 0.159 81.0)",
+        "tonalRamp": [
+          "#150800",
+          "#332100",
+          "#563d05",
+          "#7d5a0e",
+          "#a87905",
+          "#d39a0d",
+          "#febd32",
+          "#feeccd"
+        ]
+      },
+      "on-sun": {
+        "role": "neutral",
+        "displayName": "On Sun",
+        "canonical": "#121212",
+        "oklch": "oklch(18.2% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "positive": {
+        "role": "status",
+        "displayName": "Positive",
+        "canonical": "#1f7a4a",
+        "oklch": "oklch(51.5% 0.113 155.3)",
+        "tonalRamp": [
+          "#001004",
+          "#002e16",
+          "#094f2d",
+          "#157344",
+          "#409664",
+          "#65ba86",
+          "#8adfa9",
+          "#c7fed9"
+        ],
+        "dark": "#4cc985"
+      },
+      "positive-soft": {
+        "role": "status",
+        "displayName": "Positive Soft",
+        "canonical": "#ddf1e5",
+        "oklch": "oklch(94.0% 0.026 159.6)",
+        "tonalRamp": [
+          "#020f07",
+          "#1a2920",
+          "#36463d",
+          "#55665c",
+          "#75877d",
+          "#98aa9f",
+          "#bbcfc3",
+          "#e0f4e8"
+        ],
+        "dark": "#12301f"
+      },
+      "negative": {
+        "role": "status",
+        "displayName": "Negative",
+        "canonical": "#b8392a",
+        "oklch": "oklch(53.0% 0.166 30.2)",
+        "tonalRamp": [
+          "#220000",
+          "#4d0000",
+          "#800400",
+          "#ab2c1e",
+          "#d35241",
+          "#fb7764",
+          "#fcb5a8",
+          "#ffe9e5"
+        ],
+        "dark": "#f0705e"
+      },
+      "negative-soft": {
+        "role": "status",
+        "displayName": "Negative Soft",
+        "canonical": "#f8e1dc",
+        "oklch": "oklch(92.7% 0.026 32.2)",
+        "tonalRamp": [
+          "#150705",
+          "#31201d",
+          "#4f3d39",
+          "#6f5c58",
+          "#917d78",
+          "#b59f9b",
+          "#dac3bf",
+          "#fee9e4"
+        ],
+        "dark": "#3a1a15"
+      },
+      "stone-rose-granite": {
+        "role": "tertiary",
+        "displayName": "Rose Granite (People)",
+        "canonical": "#B4475C",
+        "oklch": "oklch(54.9% 0.142 11.3)",
+        "tonalRamp": [
+          "#210004",
+          "#4a0218",
+          "#7b0c2e",
+          "#a1364c",
+          "#c8596d",
+          "#ef7c8e",
+          "#fcb2bb",
+          "#ffe8ea"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-palm": {
+        "role": "tertiary",
+        "displayName": "Palm (Home)",
+        "canonical": "#2F7D57",
+        "oklch": "oklch(53.1% 0.098 159.0)",
+        "tonalRamp": [
+          "#001005",
+          "#012d1a",
+          "#084f31",
+          "#22724c",
+          "#48946d",
+          "#6cb88f",
+          "#90ddb2",
+          "#c3ffdc"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre (Food and Drink)",
+        "canonical": "#E0A021",
+        "oklch": "oklch(74.9% 0.148 78.1)",
+        "tonalRamp": [
+          "#150800",
+          "#342100",
+          "#583c05",
+          "#7f590e",
+          "#ab7705",
+          "#d7970d",
+          "#fdbc48",
+          "#ffeccf"
+        ],
+        "pairedInk": "#121212"
+      },
+      "stone-slate-blue": {
+        "role": "tertiary",
+        "displayName": "Slate Blue (Around Town)",
+        "canonical": "#3F51C4",
+        "oklch": "oklch(49.0% 0.179 271.4)",
+        "tonalRamp": [
+          "#050038",
+          "#130573",
+          "#262d9f",
+          "#4052c5",
+          "#5d76ec",
+          "#869efc",
+          "#b6c7fd",
+          "#e9eefe"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-sea": {
+        "role": "tertiary",
+        "displayName": "Sea (The World Around You)",
+        "canonical": "#087099",
+        "oklch": "oklch(51.3% 0.104 233.3)",
+        "tonalRamp": [
+          "#000d1a",
+          "#00293d",
+          "#084863",
+          "#13698f",
+          "#348cb7",
+          "#5bb0dc",
+          "#87d4fe",
+          "#ddf2fe"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-basalt": {
+        "role": "tertiary",
+        "displayName": "Basalt (Time)",
+        "canonical": "#1E1E1C",
+        "oklch": "oklch(23.4% 0.004 106.7)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252523",
+          "#424240",
+          "#61615f",
+          "#828280",
+          "#a5a5a2",
+          "#c9c9c6",
+          "#efefec"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-terracotta": {
+        "role": "tertiary",
+        "displayName": "Terracotta (Describing Things)",
+        "canonical": "#B4532A",
+        "oklch": "oklch(55.7% 0.137 41.9)",
+        "tonalRamp": [
+          "#210000",
+          "#441200",
+          "#722600",
+          "#9f3f13",
+          "#c5623a",
+          "#ec855d",
+          "#fdb69b",
+          "#ffe9e1"
+        ],
+        "pairedInk": "#ffffff"
+      },
+      "stone-earth": {
+        "role": "tertiary",
+        "displayName": "Earth (Grammar in Context)",
+        "canonical": "#7A5A3A",
+        "oklch": "oklch(49.3% 0.063 65.5)",
+        "tonalRamp": [
+          "#180600",
+          "#391d00",
+          "#593b1b",
+          "#7a5a3a",
+          "#9d7b5a",
+          "#c19e7c",
+          "#e6c29f",
+          "#feebd9"
+        ],
+        "pairedInk": "#ffffff"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Portuguese greeting on Today and subject names; condensed wdth 78."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Portuguese page titles; the condensed term style at 44px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "English section headings, sentence case."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and glosses."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, rail items, links, table text."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Chips, counts, table heads, legend; tabular figures."
+      }
+    },
+    "typeScale": [
+      {
+        "name": "t-xs",
+        "value": "12px"
+      },
+      {
+        "name": "t-sm",
+        "value": "14px"
+      },
+      {
+        "name": "t-base",
+        "value": "16px"
+      },
+      {
+        "name": "t-lg",
+        "value": "20px"
+      },
+      {
+        "name": "t-xl",
+        "value": "28px"
+      },
+      {
+        "name": "t-2xl",
+        "value": "44px"
+      },
+      {
+        "name": "t-3xl",
+        "value": "clamp(44px, 6.4vw, 92px)"
+      }
+    ],
+    "portugueseTerm": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.035em",
+      "fontVariation": "'wdth' 84",
+      "purpose": "Every Portuguese word that is the object of study; size set by context."
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 30px 60px -30px rgb(0 0 0 / 0.45)",
+        "purpose": "Flashcard front in play (0.3 alpha on the limestone back)."
+      },
+      {
+        "name": "palette-float",
+        "value": "0 40px 80px -30px rgb(0 0 0 / 0.5)",
+        "purpose": "Search palette over a rgb(5 5 5 / 0.55) backdrop with 3px blur."
+      },
+      {
+        "name": "stone-glow",
+        "value": "0 18px 36px -22px var(--tile)",
+        "purpose": "Hovered subject tile, tinted by its own stone."
+      },
+      {
+        "name": "socket-recess",
+        "value": "inset 0 1px 2px rgb(0 0 0 / 0.12)",
+        "purpose": "Empty socket in the round strip."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px color-mix(in srgb, var(--sea) 22%, transparent)",
+        "purpose": "Focused text field."
+      },
+      {
+        "name": "speak-pulse",
+        "value": "0 0 0 7px color-mix(in srgb, var(--sun) 30%, transparent)",
+        "purpose": "Peak of the speaking pulse on the speak button."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default for state transitions, entries and the flip."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Looping pulses (speak, current socket)."
+      },
+      {
+        "name": "ease-spring",
+        "value": "cubic-bezier(0.22, 1.12, 0.36, 1)",
+        "purpose": "Things landing: socket set, tokens, combo, correct choice, swipe return."
+      },
+      {
+        "name": "fly-to-socket",
+        "value": "640ms cubic-bezier(0.55, 0, 0.25, 1)",
+        "purpose": "Graded card arcs into its socket, radius 26px to a 3px stone."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) 180ms",
+        "purpose": "Every button and pressable on :active."
+      },
+      {
+        "name": "page-enter",
+        "value": "520ms ease-out, translateY(14px) + blur(6px)",
+        "purpose": "Route change."
+      },
+      {
+        "name": "reveal",
+        "value": "700ms ease-out, translateY(18px), stagger 45ms",
+        "purpose": "Staggered section entry on Today."
+      },
+      {
+        "name": "flip",
+        "value": "620ms ease-out rotateY(180deg), 280ms when instant",
+        "purpose": "Flashcard turning to its limestone side."
+      },
+      {
+        "name": "burst",
+        "value": "900-1200ms ease-out, 9px square shards",
+        "purpose": "Round finish and correct answers: the pavement chipping in celebration."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "All animations, transitions and canvas motion are disabled under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "Rail replaces header and tab bar."
+      },
+      {
+        "name": "xl",
+        "value": "1280px",
+        "purpose": "Group tiles go to eight columns."
+      }
+    ],
+    "pavement": {
+      "mortar": "#2c2b27",
+      "set-white": "#f3f3f0",
+      "set-black": "#0a0a09",
+      "set-black-edge": "#4a4943",
+      "learning": "#3fb3dd",
+      "due": "#ffc531",
+      "bare": "#353430",
+      "bare-wave": "#8d8c82",
+      "stoneGap": "13% of pitch",
+      "stoneRadius": "min(3px, 22% of stone)",
+      "note": "Drawn at runtime on canvas; no raster assets ship, so no provenance is recorded."
+    }
+  },
+  "components": [
+    {
+      "name": "Sun Button",
+      "kind": "button",
+      "refersTo": "button-sun",
+      "description": "The single primary action on a screen (Start, Review).",
+      "html": "<button class=\"ds-btn ds-btn-sun\">Review 20 cards <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line, #d3d2c9); background: var(--raised, #e9e8e2); color: var(--ink, #121212); font-size: 14px; font-weight: 650; cursor: pointer; transition: transform 180ms cubic-bezier(0.16,1,0.3,1), background-color 200ms cubic-bezier(0.16,1,0.3,1), border-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-sun { background: var(--sun, #ffc531); border-color: var(--sun, #ffc531); color: var(--on-sun, #121212); } .ds-btn-sun:hover { background: var(--sun-deep, #e8a800); border-color: var(--sun-deep, #e8a800); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; }"
+    },
+    {
+      "name": "Default Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Secondary actions on raised limestone.",
+      "html": "<button class=\"ds-btn-default\">All subjects</button>",
+      "css": ".ds-btn-default { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--line, #d3d2c9); background: var(--raised, #e9e8e2); color: var(--ink, #121212); font-size: 14px; font-weight: 650; cursor: pointer; transition: transform 180ms cubic-bezier(0.16,1,0.3,1), border-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-default:hover { border-color: var(--ink, #121212); } .ds-btn-default:active { transform: scale(0.97); } .ds-btn-default:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Reversed secondary action.",
+      "html": "<button class=\"ds-btn-ink\">Practice again</button>",
+      "css": ".ds-btn-ink { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; height: 46px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--ink, #121212); background: var(--ink, #121212); color: var(--ground, #f3f3f0); font-size: 14px; font-weight: 650; cursor: pointer; transition: transform 180ms cubic-bezier(0.16,1,0.3,1), background-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn-ink:hover { background: color-mix(in srgb, var(--ink, #121212) 85%, var(--ground, #f3f3f0)); } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Text input and select on raised limestone; sea on focus.",
+      "html": "<input class=\"ds-field\" placeholder=\"Search words, verbs, subjects\" />",
+      "css": ".ds-field { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; width: 100%; height: 46px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--line, #d3d2c9); background: var(--raised, #e9e8e2); color: var(--ink, #121212); font-size: 16px; outline: none; caret-color: var(--sea, #087099); transition: border-color 200ms cubic-bezier(0.16,1,0.3,1), box-shadow 200ms cubic-bezier(0.16,1,0.3,1); } .ds-field::placeholder { color: var(--faint, #8a8a83); } .ds-field:focus { border-color: var(--sea, #087099); box-shadow: 0 0 0 3px color-mix(in srgb, var(--sea, #087099) 22%, transparent); }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented",
+      "description": "Mode switch on a sunken pill track; the pressed segment reverses to ink.",
+      "html": "<div class=\"ds-seg\"><button aria-pressed=\"true\">Due and new</button><button aria-pressed=\"false\">New only</button><button aria-pressed=\"false\">Hard</button></div>",
+      "css": ".ds-seg { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: inline-flex; padding: 4px; gap: 2px; border-radius: 999px; background: var(--sunken, #dddcd4); } .ds-seg button { font: inherit; border: 0; background: transparent; height: 38px; padding: 0 16px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted, #5d5d57); cursor: pointer; transition: background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-seg button[aria-pressed=\"true\"] { background: var(--ink, #121212); color: var(--ground, #f3f3f0); } .ds-seg button:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; }"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Small tabular counts; sun for due, positive and negative for results.",
+      "html": "<span class=\"ds-chip\">12 words</span> <span class=\"ds-chip ds-chip-sun\">59 due</span> <span class=\"ds-chip ds-chip-pos\">8 right</span> <span class=\"ds-chip ds-chip-neg\">2 wrong</span>",
+      "css": ".ds-chip { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: inline-flex; align-items: center; height: 24px; padding: 0 9px; border-radius: 6px; font-size: 12px; font-weight: 650; font-variant-numeric: tabular-nums; background: var(--sunken, #dddcd4); color: var(--muted, #5d5d57); } .ds-chip-sun { background: var(--sun, #ffc531); color: var(--on-sun, #121212); } .ds-chip-pos { background: var(--positive-soft, #ddf1e5); color: var(--positive, #1f7a4a); } .ds-chip-neg { background: var(--negative-soft, #f8e1dc); color: var(--negative, #b8392a); }"
+    },
+    {
+      "name": "Rail Navigation",
+      "kind": "nav",
+      "refersTo": "rail-item",
+      "description": "Basalt rail; the active item reverses to limestone, due count in sun.",
+      "html": "<nav class=\"ds-rail\"><a class=\"ds-rail-item ds-active\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\"><path d=\"M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"/><path d=\"M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"/><path d=\"M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1\"/></svg>Today</a><a class=\"ds-rail-item\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 2 9 5-9 5-9-5Z\"/><path d=\"m3 12 9 5 9-5\"/><path d=\"m3 17 9 5 9-5\"/></svg>Study<span class=\"ds-count\">59</span></a></nav>",
+      "css": ".ds-rail { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; width: 224px; padding: 12px; background: var(--basalt, #141413); display: flex; flex-direction: column; gap: 4px; border-radius: 18px; } .ds-rail-item { display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border-radius: 10px; color: var(--on-basalt-muted, #a6a69e); font-size: 14px; font-weight: 500; text-decoration: none; transition: color 200ms cubic-bezier(0.16,1,0.3,1), background-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-rail-item svg { width: 18px; height: 18px; flex: none; } .ds-rail-item:hover:not(.ds-active) { color: var(--on-basalt, #f3f3f0); background: var(--basalt-2, #22221f); } .ds-rail-item.ds-active { color: var(--basalt, #141413); background: var(--limestone, #f3f3f0); font-weight: 650; } .ds-count { margin-left: auto; font-size: 12px; font-weight: 650; color: var(--sun, #ffc531); font-variant-numeric: tabular-nums; } .ds-active .ds-count { color: var(--basalt, #141413); } .ds-rail-item:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; }"
+    },
+    {
+      "name": "Stone Tile",
+      "kind": "card",
+      "refersTo": "",
+      "description": "A subject group tile filled with its stone, with a square-stone meter and a stone-tinted glow on hover.",
+      "html": "<a class=\"ds-tile\" href=\"#\" style=\"--tile:#B4475C;--tile-ink:#ffffff\"><span class=\"ds-tile-name\">People</span><span><span class=\"ds-tile-count\">50/188</span><span class=\"ds-stones\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span></a>",
+      "css": ".ds-tile { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: flex; flex-direction: column; justify-content: space-between; width: 140px; height: 128px; padding: 16px; box-sizing: border-box; border-radius: 18px; background: var(--tile); color: var(--tile-ink); text-decoration: none; transition: box-shadow 300ms cubic-bezier(0.16,1,0.3,1), transform 180ms cubic-bezier(0.16,1,0.3,1); } .ds-tile:hover { box-shadow: 0 18px 36px -22px var(--tile); } .ds-tile:active { transform: scale(0.97); } .ds-tile:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; } .ds-tile-name { font-size: 17px; line-height: 1.1; font-weight: 700; letter-spacing: -0.015em; } .ds-tile-count { display: block; font-size: 12px; font-weight: 500; opacity: 0.85; font-variant-numeric: tabular-nums; } .ds-stones { display: flex; gap: 2px; height: 8px; margin-top: 8px; } .ds-stones i { flex: 1; border-radius: 1.5px; background: color-mix(in srgb, currentColor 22%, transparent); } .ds-stones i.on { background: currentColor; }"
+    },
+    {
+      "name": "Practice Choice",
+      "kind": "custom",
+      "refersTo": "choice",
+      "description": "Multiple-choice answer; turns positive or negative on answer.",
+      "html": "<button class=\"ds-choice\">a gente</button><button class=\"ds-choice ds-correct\">você</button>",
+      "css": ".ds-choice { font-family: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif; display: flex; align-items: center; width: 100%; min-height: 62px; padding: 0 18px; margin-bottom: 8px; border-radius: 16px; border: 1.5px solid var(--line, #d3d2c9); background: var(--raised, #e9e8e2); color: var(--ink, #121212); font-size: 20px; font-weight: 600; letter-spacing: -0.01em; text-align: left; cursor: pointer; transition: border-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-choice:hover { border-color: var(--ink, #121212); } .ds-choice:focus-visible { outline: 2px solid var(--sea, #087099); outline-offset: 3px; } .ds-choice.ds-correct { border-color: var(--positive, #1f7a4a); background: var(--positive-soft, #ddf1e5); color: var(--positive, #1f7a4a); }"
+    },
+    {
+      "name": "Round Sockets",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "The round's strip of sockets graded cards fly into; current socket pulses sun.",
+      "html": "<div class=\"ds-sockets\"><i class=\"set\" style=\"background:#B4475C\"></i><i class=\"set\" style=\"background:#2F7D57\"></i><i class=\"cur\"></i><i></i><i></i><i></i><i></i><i></i></div>",
+      "css": ".ds-sockets { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0,1fr); gap: 4px; height: 14px; width: 320px; } .ds-sockets i { border-radius: 3px; background: var(--sunken, #dddcd4); box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12); } .ds-sockets i.set { box-shadow: none; } .ds-sockets i.cur { background: color-mix(in srgb, var(--sun, #ffc531) 45%, var(--sunken, #dddcd4)); animation: ds-wait 1.4s cubic-bezier(0.65,0,0.35,1) infinite; } @keyframes ds-wait { 50% { background: color-mix(in srgb, var(--sun, #ffc531) 80%, var(--sunken, #dddcd4)); } } @media (prefers-reduced-motion: reduce) { .ds-sockets i.cur { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Calçadão",
+    "overview": "The app is Burle Marx's Copacabana promenade seen from above. Every vocabulary item is one tessera; studying it lays the stone. A basalt rail and a limestone ground carry the shell, the sea owns everything live (due, learning, focus, the caret), the sun owns the one primary action and the moment a stone is set, and each of the eight subject groups owns one full-strength stone colour. The signature object is the canvas pavement on Today: a mortar field of square stones laid along a wavy work front, black and white where words are set, wet sea blue where they are settling, sun yellow where they are due, and bare grains that already trace the wave still to be laid.\n\nPortuguese is the material and is set poster-size, tight and condensed, against small, plain English UI. Browsing screens stay calm and quick; the wow is spent on Today, flashcards and practice, where motion keeps identity: a graded card shrinks into a stone and flies into the round's socket strip, a finished round bursts tesserae, a correct choice pops and a wrong one shakes. The night theme darkens the ground, but the pavement keeps its stones so the mosaic reads as one object in both themes.\n\nThe world refuses the study-app default of white cards, a streak flame and a purple accent.",
+    "keyCharacteristics": [
+      "Basalt shell, limestone ground, square tesserae as the only ornament motif.",
+      "Sea for live state, sun for the single primary action and celebration, eight group stones at full strength.",
+      "Bricolage Grotesque variable, condensed by the `wdth` axis for Portuguese, normal width for UI.",
+      "Flat tonal layering; shadow only on lifted objects (the flashcard, the search palette, hovered tiles).",
+      "Motion that carries identity: cards become stones, stones fall into sockets."
+    ],
+    "rules": [
+      {
+        "name": "The Two Signals Rule",
+        "body": "Sea means \"live now\" and sun means \"do this / it is set\". Never swap them, and never use either as decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Sun Rule",
+        "body": "One sun-filled button per screen; it is the action the screen exists for.",
+        "section": "colors"
+      },
+      {
+        "name": "The Group Owns Its Stone Rule",
+        "body": "A group's stone is used at full strength with its paired ink, never tinted down to a pastel, and never reused for a different group.",
+        "section": "colors"
+      },
+      {
+        "name": "The Material Rule",
+        "body": "Portuguese is the product's material: whenever a Portuguese word is the subject, set it with the condensed heavy term style, larger than the English around it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rank Rule",
+        "body": "Rank comes from weight, width and reversal (basalt or sea field), drawn from the token ramp; numbers that count anything are tabular.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lifted Objects Rule",
+        "body": "Only things that move over the pavement (a card, the palette, a hovered tile) cast shadow. Panels, buttons and fields stay flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Tessera Rule",
+        "body": "Any marker, meter segment or status swatch is a small square stone (radius 1 to 3px), never a circle or a bar with rounded ends.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** take every colour from the CSS custom properties in `src/index.css` and every group colour from `GROUP_STONE`.",
+      "**Do** set Portuguese in the condensed heavy term style and English UI at 14 to 16px.",
+      "**Do** keep sea for live state and sun for the one primary action and the moment a stone is set.",
+      "**Do** draw meters, markers and progress as rows of small square stones (2px gap, 1.5 to 3px radius).",
+      "**Do** use `--ease-out` cubic-bezier(0.16, 1, 0.3, 1) for state transitions and `--ease-spring` for things landing; stagger reveals by 45ms.",
+      "**Do** turn off every animation and transition under prefers-reduced-motion, as the existing helpers do."
+    ],
+    "donts": [
+      "**Don't** use white cards, a streak flame or a purple accent.",
+      "**Don't** put more than one sun button on a screen, or use sun or sea as decoration.",
+      "**Don't** tint a group stone to a pastel or assign it to anything but its group.",
+      "**Don't** add shadows to panels, buttons or fields; shadow belongs to lifted objects.",
+      "**Don't** add uppercase tracked labels above headings; section headings are 20px sentence-case titles."
+    ]
+  }
+}

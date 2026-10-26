@@ -36,6 +36,51 @@
         ],
         "createdAt": "2026-10-26T19:17:04.949Z",
         "reason": "Agent: decision-round sketch of an unchosen direction (radial gradients draw tile motifs); not shipped"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-26T19:36:47.573Z",
+        "reason": "Agent: unshipped decision-round sketch, not part of the app"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-26T19:36:47.588Z",
+        "reason": "Agent: unshipped decision-round sketch, not part of the app"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-metro.html"
+        ],
+        "createdAt": "2026-10-26T19:36:47.604Z",
+        "reason": "Agent: unshipped decision-round sketch, not part of the app"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-feed.html"
+        ],
+        "createdAt": "2026-10-26T19:36:47.618Z",
+        "reason": "Agent: unshipped decision-round sketch, not part of the app"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-26T19:36:47.641Z",
+        "reason": "Agent: unshipped decision-round sketch, not part of the app"
       }
     ]
   }

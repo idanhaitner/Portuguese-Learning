@@ -144,16 +144,17 @@ export function Dashboard() {
               <li key={group.id} className="reveal" style={{ "--i": index + 3 } as React.CSSProperties}>
                 <Link
                   to={`/subjects#${group.id}`}
-                  className="stone-tile pressable h-[128px] p-4 xl:h-[136px]"
+                  className="stone-tile pressable h-[128px] p-4 xl:h-[124px] xl:p-3.5"
                   style={{ "--tile": stone.stone, "--tile-ink": stone.ink } as React.CSSProperties}
                 >
                   <span className="flex items-start justify-between gap-2">
-                    <span className="text-[17px] leading-tight font-bold tracking-[-0.015em]">{group.name}</span>
-                    <ArrowRight size={16} strokeWidth={2.2} className="tile-arrow mt-1 flex-none" />
+                    <span className="text-[17px] leading-[1.1] font-bold tracking-[-0.015em] xl:text-[15px]">{group.name}</span>
+                    <ArrowRight size={16} strokeWidth={2.2} className="tile-arrow mt-1 flex-none xl:hidden" />
                   </span>
                   <span>
-                    <span className="num block text-[var(--t-xs)] font-medium opacity-85">
-                      {seen}/{total} cards
+                    <span className="num block truncate text-[var(--t-xs)] font-medium opacity-85">
+                      {seen}/{total}
+                      <span className="xl:sr-only"> cards</span>
                     </span>
                     <span className="stones mt-2" aria-hidden="true">
                       {Array.from({ length: 12 }, (_, i) => (

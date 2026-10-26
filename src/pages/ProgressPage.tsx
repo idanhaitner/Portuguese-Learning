@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Pavement } from "../components/Pavement";
 import { useAppState } from "../context/AppState";
@@ -175,10 +175,20 @@ function useWide() {
 
 /** One series drawn as columns of stones: each stone is a few reviews, today's column in the sun. */
 function DayBars({ days }: { days: { key: string; label: string; reviews: number }[] }) {
-  const width = 640;
-  const height = 230;
-  const left = 40;
-  const bottom = 30;
+  // drawn at the real pixel width, so labels stay 12px on a phone instead of scaling down
+  const ref = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(640);
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+    const observer = new ResizeObserver(([entry]) => setWidth(Math.max(240, Math.round(entry.contentRect.width))));
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+  const height = 220;
+  const left = 30;
+  const bottom = 24;
+  const every = width < 480 ? 4 : width < 720 ? 2 : 1;
   const max = Math.max(...days.map((day) => day.reviews));
   const step = niceStep(max);
   const top = Math.max(step * 3, step * Math.ceil(max / step));
@@ -190,11 +200,12 @@ function DayBars({ days }: { days: { key: string; label: string; reviews: number
   const stoneH = 9;
 
   return (
-    <svg viewBox={`0 0 ${width} ${height}`} className="block h-auto w-full" role="img" aria-label={`Reviews per day for the last ${days.length} days, ${total} in all`}>
+    <div ref={ref}>
+    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className="block" role="img" aria-label={`Reviews per day for the last ${days.length} days, ${total} in all`}>
       {ticks.map((tick) => (
         <g key={tick}>
           <line x1={left} x2={width} y1={y(tick)} y2={y(tick)} stroke="var(--rule)" strokeDasharray={tick ? "3 4" : undefined} />
-          <text x={left - 8} y={y(tick)} dy="0.32em" textAnchor="end" fontSize="15" fill="var(--muted)" className="num">
+          <text x={left - 8} y={y(tick)} dy="0.32em" textAnchor="end" fontSize="12" fill="var(--muted)" className="num">
             {tick}
           </text>
         </g>
@@ -210,8 +221,8 @@ function DayBars({ days }: { days: { key: string; label: string; reviews: number
             {Array.from({ length: stones }, (_, s) => (
               <rect key={s} x={x} y={y(0) - (s + 1) * (barH / stones) + 1} width={slot * 0.6} height={barH / stones - 2} rx="2" fill={isToday ? "var(--sun)" : "var(--ink)"} />
             ))}
-            {(days.length - 1 - index) % 3 === 0 ? (
-              <text x={x + slot * 0.3} y={height - 6} textAnchor="middle" fontSize="15" fontWeight={isToday ? 700 : 400} fill={isToday ? "var(--ink)" : "var(--muted)"}>
+            {(days.length - 1 - index) % every === 0 ? (
+              <text x={isToday ? width - 2 : x + slot * 0.3} y={height - 6} textAnchor={isToday ? "end" : "middle"} fontSize="12" fontWeight={isToday ? 700 : 400} fill={isToday ? "var(--ink)" : "var(--muted)"}>
                 {isToday ? "Today" : day.label}
               </text>
             ) : null}
@@ -219,6 +230,7 @@ function DayBars({ days }: { days: { key: string; label: string; reviews: number
         );
       })}
     </svg>
+    </div>
   );
 }
 
