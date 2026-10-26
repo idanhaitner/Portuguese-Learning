@@ -4,7 +4,7 @@ import { ArrowRight, RotateCcw } from "lucide-react";
 import { Flashcard, GRADES } from "../components/Flashcard";
 import { Pavement } from "../components/Pavement";
 import { useAppState } from "../context/AppState";
-import { data, resolveSubjectId, studyCards, subjectName, subjectsInGroup, type StudyCard } from "../lib/content";
+import { data, resolveSubjectId, shuffle, studyCards, subjectName, subjectsInGroup, type StudyCard } from "../lib/content";
 import { burst, flyToSocket, vibrate } from "../lib/fx";
 import type { Grade } from "../lib/srs";
 
@@ -41,14 +41,15 @@ export function FlashcardsPage() {
     const now = Date.now();
     const pool = studyCards().filter((card) => (subjectId === "all" || card.subjectId === subjectId) && (kind === "all" || card.kind === kind));
     let next: StudyCard[];
-    if (mode === "hard") next = pool.filter((card) => snapshot.hardCardIds.includes(card.id));
-    else if (mode === "new") next = pool.filter((card) => !snapshot.cards[card.id]);
+    if (mode === "hard") next = shuffle(pool.filter((card) => snapshot.hardCardIds.includes(card.id)));
+    else if (mode === "new") next = shuffle(pool.filter((card) => !snapshot.cards[card.id]));
     else {
-      // reviews first, oldest due first; then new cards in the order of your notes
+      // the most overdue reviews get the seats first, then a random pick of new cards
       const due = pool.filter((card) => snapshot.cards[card.id] && snapshot.cards[card.id].due <= now).sort((a, b) => snapshot.cards[a.id].due - snapshot.cards[b.id].due);
-      next = [...due, ...pool.filter((card) => !snapshot.cards[card.id])];
+      next = [...due, ...shuffle(pool.filter((card) => !snapshot.cards[card.id]))];
     }
-    setQueue(next.slice(0, ROUND));
+    // shuffle the round itself so words never come in the order of the notes
+    setQueue(shuffle(next.slice(0, ROUND)));
     setCursor(0);
     setFlipped(false);
     setResults([]);
